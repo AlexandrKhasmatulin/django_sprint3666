@@ -2,7 +2,6 @@ from django.contrib.auth import get_user_model
 from django.db import models
 
 User = get_user_model()
-MAX_TITLE_LENGTH = 256
 
 
 class PublishedModel(models.Model):
@@ -22,7 +21,7 @@ class PublishedModel(models.Model):
 
 class Category(PublishedModel):
     title = models.CharField(
-        max_length=MAX_TITLE_LENGTH,
+        max_length=256,
         verbose_name='Заголовок'
     )
     description = models.TextField(default=True, verbose_name='Описание')
@@ -37,12 +36,12 @@ class Category(PublishedModel):
         verbose_name_plural = 'Категории'
 
         def __str__(self):
-            return self.name
+            return self.title
 
 
 class Location(PublishedModel):
     name = models.CharField(
-        max_length=MAX_TITLE_LENGTH,
+        max_length=256,
         verbose_name='Название места'
     )
 
@@ -55,7 +54,7 @@ class Location(PublishedModel):
 
 
 class Post(PublishedModel):
-    title = models.CharField(max_length=256)
+    title = models.CharField(max_length=256, verbose_name='Заголовок')
     text = models.TextField(verbose_name='Текст')
     pub_date = models.DateTimeField(
         verbose_name='Дата и время публикации',
@@ -75,8 +74,8 @@ class Post(PublishedModel):
     )
     category = models.ForeignKey(
         Category,
-        on_delete=models.SET_NULL,
         null=True,
+        on_delete=models.SET_NULL,
         verbose_name='Категория'
     )
 
@@ -87,4 +86,4 @@ class Post(PublishedModel):
         ordering = ('-pub_date',)
 
     def __str__(self):
-        return self.name
+        return self.title
