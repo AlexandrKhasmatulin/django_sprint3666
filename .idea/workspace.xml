@@ -6,11 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="a4db5a59-59d8-4e01-98d6-b3143e176607" name="Changes" comment="final">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogicum/blog/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogicum/blog/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogicum/blog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogicum/blog/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogicum/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogicum/blog/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blogicum/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogicum/blog/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blogicum/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogicum/blog/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogicum/pages/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogicum/pages/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogicum/pages/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogicum/pages/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,14 +38,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Khasm/dev/django_sprint3/blogicum",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PythonContentEntriesConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Khasm/dev/django_sprint3/blogicum&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PythonContentEntriesConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Khasm\dev\django_sprint3\blogicum" />
@@ -87,7 +86,31 @@
       <option name="project" value="LOCAL" />
       <updated>1709588002187</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="final">
+      <option name="closed" value="true" />
+      <created>1709588662303</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1709588662303</updated>
+    </task>
+    <task id="LOCAL-00004" summary="final">
+      <option name="closed" value="true" />
+      <created>1709588724677</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1709588724677</updated>
+    </task>
+    <task id="LOCAL-00005" summary="final">
+      <option name="closed" value="true" />
+      <created>1709588925114</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1709588925114</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

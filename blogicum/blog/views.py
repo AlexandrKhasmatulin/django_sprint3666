@@ -12,7 +12,7 @@ def base_query():
     ).filter(
         is_published=True,
         category__is_published=True,
-        pub_date__lte=datetime.datetime.now())
+        pub_date__lte=datetime.timezone.now()())
 
 
 def index(request):
@@ -32,7 +32,7 @@ def category_posts(request, category_slug):
         slug=category_slug
     )
     post_list = base_query().filter(
-        category=category)
+        category.posts.all())
     return render(
         request,
         'blog/category.html',
