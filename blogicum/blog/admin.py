@@ -1,5 +1,5 @@
 from django.contrib import admin
-from blogicum.blog.models import Category, Location, Post
+from blog.models import Category, Location, Post
 
 admin.site.empty_value_display = 'Не задано'
 
