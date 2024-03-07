@@ -1,7 +1,5 @@
 from django.shortcuts import render
 
-from django.shortcuts import render
-
 
 def about(request):
     template = 'pages/about.html'
