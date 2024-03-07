@@ -1,7 +1,6 @@
 from django.utils import timezone
 from django.shortcuts import render, get_object_or_404
-
-from .models import Category, Post
+from blog.models import Category, Post
 
 MAX_POST_PAGE = 5
 
