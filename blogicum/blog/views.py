@@ -1,4 +1,4 @@
-import datetime
+from django.utils import timezone
 from django.shortcuts import render, get_object_or_404
 
 from .models import Category, Post
@@ -12,7 +12,7 @@ def base_query():
     ).filter(
         is_published=True,
         category__is_published=True,
-        pub_date__lte=datetime.datetime.now())
+        pub_date__lte=timezone.now())
 
 
 def index(request):
@@ -32,7 +32,7 @@ def category_posts(request, category_slug):
         slug=category_slug
     )
     post_list = base_query().filter(
-        category=category)
+        category.posts.all())
     return render(
         request,
         'blog/category.html',
